@@ -12,8 +12,8 @@ class MBR_Pot{
     float readPotVolt();
     float potVolt;
 
-    float readPotNorm();
-    float potNorm;
+    int readPotNorm();
+    int potNorm;
 
   private:
     uint8_t _pin;
