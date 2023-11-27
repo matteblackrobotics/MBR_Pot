@@ -22,7 +22,7 @@ float MBR_Pot::readPotVolt(){
     return potVolt;
 }
 
-int MBR_Pot::readPotNorm(){
+float MBR_Pot::readPotNorm(){
     potNorm = analogRead(_pin) * (100.0/1023.0);
     return potNorm;
 }

@@ -6,14 +6,14 @@
 class MBR_Pot{
   public:
     MBR_Pot(uint8_t potPin, float Vin); // pin and Vin
-    int readPotRaw();
+    int readPotRaw(); // [0:1023] 10-bit
     int potRaw;
 
-    float readPotVolt();
+    float readPotVolt();  // voltage reading [0.0:Vin]
     float potVolt;
 
-    int readPotNorm();
-    int potNorm;
+    float readPotNorm();  // normalized raading [0.0:100.0]
+    float potNorm;
 
   private:
     uint8_t _pin;
