@@ -12,8 +12,6 @@ MBR_Pot::MBR_Pot(uint8_t potPin, float Vin){
     pinMode(_pin, INPUT);
 }
 
-float minLimit = 0.0;
-float maxLimit = 100.0;
 
 // Ouput [0:1023]
 int MBR_Pot::readPotRaw(){
