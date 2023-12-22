@@ -15,6 +15,9 @@ class MBR_Pot{
     float readPotNorm();  // normalized raading [0.0:100.0]
     float potNorm;
 
+    float minLimit; // minimum limit value
+    float maxLimit; // maximum limit value
+
   private:
     uint8_t _pin;
     float _Vin;
