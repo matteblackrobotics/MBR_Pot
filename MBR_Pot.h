@@ -6,14 +6,14 @@
 class MBR_Pot{
   public:
     MBR_Pot(uint8_t potPin, float Vin); // pin and Vin
-    int readPotRaw(); // [0:1023] 10-bit
-    int potRaw;
+    int readRaw(); // [0:1023] 10-bit
+    int raw;
 
-    float readPotVolt();  // voltage reading [0.0:Vin]
-    float potVolt;
+    float readVolt();  // voltage reading [0.0:Vin]
+    float volt;
 
-    float readPotNorm();  // normalized raading [0.0:100.0]
-    float potNorm;
+    float readNorm();  // normalized raading [0.0:100.0]
+    float norm;
 
     float minLimit = 0.0; // minimum limit value
     float maxLimit = 100.0; // maximum limit value

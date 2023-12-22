@@ -14,17 +14,17 @@ MBR_Pot::MBR_Pot(uint8_t potPin, float Vin){
 
 
 // Ouput [0:1023]
-int MBR_Pot::readPotRaw(){
-  potRaw = analogRead(_pin);
-  return potRaw; // [0:1023]
+int MBR_Pot::readRaw(){
+  raw = analogRead(_pin);
+  return raw; // [0:1023]
 }
 
-float MBR_Pot::readPotVolt(){
-    potVolt = analogRead(_pin) * (_Vin/1023.0);
-    return potVolt; // [0:5.0]v
+float MBR_Pot::readVolt(){
+    volt = analogRead(_pin) * (_Vin/1023.0);
+    return volt; // [0:5.0]v
 }
 
-float MBR_Pot::readPotNorm(){
-    potNorm = analogRead(_pin) * (100.0/1023.0);
-    return potNorm; // [0.0:100.0]
+float MBR_Pot::readNorm(){
+    norm = analogRead(_pin) * (100.0/1023.0);
+    return norm; // [0.0:100.0]
 }
