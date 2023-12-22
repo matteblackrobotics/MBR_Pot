@@ -1,8 +1,9 @@
 #include "MBR_Pot.h"
 // Left: +5
 // Middle: signal
-// Right: GND
+// Right: GND 
 
+// hello
 // Constructor
 // Analog pin and voltageMax in volts
 MBR_Pot::MBR_Pot(uint8_t potPin, float Vin){
