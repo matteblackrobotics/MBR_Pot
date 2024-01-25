@@ -12,7 +12,7 @@ class MBR_Pot{
     float readVolt();  // voltage reading [0.0:Vin]
     float volt;
 
-    float readNorm();  // normalized raading [0.0:100.0]
+    float readNorm();  // normalized reading [0.0:100.0]
     float norm;
 
     float minLimit = 0.0; // minimum limit value
